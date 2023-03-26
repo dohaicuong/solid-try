@@ -1,0 +1,39 @@
+{
+  "name": "vite-template-solid",
+  "private": true,
+  "type": "module",
+  "description": "",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "next": "^13.2.4",
+    "postcss": "^8.4.21",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.1",
+    "vite-plugin-solid": "^2.5.0"
+  },
+  "dependencies": {
+    "@felte/reporter-solid": "^1.2.5",
+    "@felte/solid": "^1.2.7",
+    "@felte/validator-zod": "^1.0.13",
+    "@generouted/solid-router": "^1.11.6",
+    "@solidjs/router": "^0.8.2",
+    "@tanstack/solid-query": "^4.27.0",
+    "@trpc/client": "^10.18.0",
+    "@trpc/server": "^10.18.0",
+    "clsx": "^1.2.1",
+    "daisyui": "^2.51.5",
+    "generouted": "^1.11.6",
+    "solid-js": "^1.6.10",
+    "solid-toast": "^0.5.0",
+    "solid-trpc": "0.0.11-rc.3",
+    "tailwindcss": "^3.2.7",
+    "zod": "^3.21.4"
+  }
+}
