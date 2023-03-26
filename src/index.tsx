@@ -15,8 +15,8 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
 
 render(() => (
   <trpc.Provider client={client} queryClient={queryClient}>
-    <QueryClientProvider client={queryClient}>
+    {/* <QueryClientProvider client={queryClient}> */}
       <Routes />
-    </QueryClientProvider>
+    {/* </QueryClientProvider> */}
   </trpc.Provider>
 ), root!)
