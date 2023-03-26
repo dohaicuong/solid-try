@@ -3,6 +3,9 @@ import { render } from 'solid-js/web'
 import { Routes } from 'generouted/solid-router'
 import './index.css'
 
+import { client, queryClient, trpc } from './providers/trpc'
+import { QueryClientProvider } from '@tanstack/solid-query'
+
 const root = document.getElementById('root')
 if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
   throw new Error(
@@ -10,4 +13,10 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
   )
 }
 
-render(() => <Routes />, root!)
+render(() => (
+  <trpc.Provider client={client} queryClient={queryClient}>
+    <QueryClientProvider client={queryClient}>
+      <Routes />
+    </QueryClientProvider>
+  </trpc.Provider>
+), root!)
